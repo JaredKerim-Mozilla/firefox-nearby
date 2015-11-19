@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1>
+      <img id="logo" src="static/img/logosmall.png" />
+      Firefox Nearby
+    </h1>
+    <div id="venues">
+    </div>
+
+    <script id="venue-template" type="text/x-handlebars-template">
+      <div class="venue">
+        <h1>{{name}}</h1>
+        <ul>
+          <li>
+            <span>{{categories}}</span>
+          </li>
+          <li>
+            <span>{{address}}</span>
+          </li>
+        </ul>
+      </div>
+    </script>
+    <script src="static/js/es6-promise.js"></script>
+    <script src="static/js/fetch.js"></script>
+    <script src="static/js/handlebars.js"></script>
+    <script src="static/js/nearby.js"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="static/css/nearby.css">
+  </body>
+</html>

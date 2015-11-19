@@ -1,0 +1,13 @@
+body {
+  background-color: #00AACC;
+  color: #F4F4F4;
+  font-family: 'Open Sans Light',X-LocaleSpecific-Light,'Open Sans',X-LocaleSpecific,sans-serif;
+}
+
+#logo {
+  height: 40px;
+}
+
+ul {
+  list-style-type: none;
+}
