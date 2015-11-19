@@ -21,8 +21,13 @@ window.onload = function () {
           categories.push(venue.categories[category_i].name);
         }
 
+        var title = '<h1>' + venue.name + '</h1>';
+        if (venue.url != null) {
+          title = '<a href="' + venue.url + '">' + title + '</a>';
+        }
+
         var venueHtml = venueTemplate({
-          name: venue.name,
+          name: title,
           categories: categories.join(','),
           address: venue.location.address,
           url: venue.url
