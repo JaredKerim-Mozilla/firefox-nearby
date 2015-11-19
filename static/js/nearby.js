@@ -24,7 +24,8 @@ window.onload = function () {
         var venueHtml = venueTemplate({
           name: venue.name,
           categories: categories.join(','),
-          address: venue.location.address
+          address: venue.location.address,
+          url: venue.url
         });
 
         parentNode.innerHTML += venueHtml;
