@@ -26,7 +26,8 @@ window.onload = function () {
             name: venue.name,
             categories: categories.join(','),
             address: venue.location.address,
-            url: venue.url
+            url: venue.url,
+            wikipedia_url: 'https://en.m.wikipedia.org/wiki/' + venue.name.replace(/\s/g, '_')
           });
 
           parentNode.innerHTML += venueHtml;
